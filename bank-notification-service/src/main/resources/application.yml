@@ -1,0 +1,24 @@
+
+# Application Configuration for Bank Notification Service
+server:
+  port: 8083
+
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: shelkesv88@gmail.com
+    password: wheg ddws ebif vyxe   # 🔐 Use app-specific password if using Gmail
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+  application:
+    name: bank-notification-service
+
+#SEND EMAIL PROPERTIES **
+email:
+  subject : Welcome to Bank of Test – Your Account Has Been Successfully Created!
+  body : Dear Customer,\n\nWe are pleased to inform you that your account has been successfully created with Bank of Test .\n\nYou can now log in to our banking portal, manage your account, and enjoy our full range of financial services.\n\nIf you have any questions, contact support@bankoftest.com.\n\nBest regards,\nBank of Test  Customer Service Team
